@@ -1,0 +1,81 @@
+.odaWrapper {
+  background-image: linear-gradient(to right top, #2d0537, #830943, #c5452c, #d89600, #aeeb12);
+  height: 180px;
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.odaWrapper:before {
+  background: #000;
+  border-radius: 50%;
+  box-shadow: 
+    500px 0 0 0 #000, 
+    0 180px 0 0 #000, 
+    500px 180px 0 0 #000,
+    0 40px 0 -20px #000,
+    0 60px 0 -20px #000,
+    0 80px 0 -20px #000,
+    0 100px 0 -20px #000,
+    0 120px 0 -20px #000,
+    0 140px 0 -20px #000,
+    500px 40px 0 -20px #000,
+    500px 60px 0 -20px #000,
+    500px 80px 0 -20px #000,
+    500px 100px 0 -20px #000,
+    500px 120px 0 -20px #000,
+    500px 140px 0 -20px #000;
+  content: "";
+  display: block;
+  height: 50px;
+  width: 50px;
+  left: -25px;
+  position: absolute;
+  top: -25px;
+}
+
+.odaText {
+  border-radius: 20px;
+  border: 3px solid #fff;
+  color: #fff;
+  display: inline-block;
+  font-size: 60px;
+  font-family: 'Courier New', Courier, monospace;
+  left: 0;
+  left: 50%;
+  line-height: 1.5;
+  padding: 0 40px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.odaText:before,
+.odaText:after {
+  background: #fff;
+  color: #000;
+  display: inline-block;
+  font-size: 16px;
+  left: 50%;
+  padding: 0 10px;
+  position: absolute;
+}
+
+.odaText:before {
+  content: "Ticket";
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  top: 0;
+}
+
+.odaText:after {
+  bottom: 0;
+  content: "Invite";
+  -webkit-transform: translateX(-50%) translateY(50%);
+  -moz-transform: translateX(-50%) translateY(50%);
+  transform: translateX(-50%) translateY(50%);
+}

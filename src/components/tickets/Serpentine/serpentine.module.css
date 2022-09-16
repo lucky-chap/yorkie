@@ -1,0 +1,174 @@
+article {
+  width: 360px;
+  height: 720px;
+  margin: 5rem auto;
+  display: flex;
+  flex-flow: column;
+  background-color: #DBD2B2;
+  clip-path: polygon(15% 0, 85% 0, 100% 10%, 100% 100%, 0 100%, 0 10%);
+  padding: 1rem 20px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.top {
+  margin-bottom: 2rem;
+}
+
+.top .row .block {
+  flex-grow: 1;
+}
+
+.block img {
+  display: block;
+  margin: auto;
+}
+
+.top .block p {
+  color: #E02F2C;
+  font-size: 2rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.top p {
+  text-transform: uppercase;
+  font-size: .75rem;
+  text-align: center;
+  align-self: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #343E6F;
+  margin-top: 20px;
+  margin-bottom: 1rem;
+}
+
+.top img {
+  width: 72px;
+}
+
+.top .punch-hole {
+  height: 72px;
+  width: 72px;
+  background-color: #906B39;
+  border-radius: 100px;
+  display: flex;
+  box-shadow: 2px 2px 2px rgba(0,0,0, .85);
+  margin: auto;
+}
+
+.top .punch-hole:before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-color: #062B60;
+  border-radius: 100px;
+  display: inline-block;
+  margin: auto;
+  box-shadow: 2px 2px 4px rgba(255, 255, 255, .5);
+}
+
+.main {
+  display: flex;
+  flex-flow: column;
+}
+
+h3 {
+  margin-top: 5px;
+  font-family: 'Squada One', cursive;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #343E6F;
+  width: 100%;
+}
+
+.row:nth-of-type(2) {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box {
+  border-top: 2px solid #35281C;
+  border-bottom: 2px solid #35281C;
+  height: 80px;
+  flex: 1 1 50%;
+}
+
+.row .box:first-of-type {
+  border-right: 2px solid #35281C;
+}
+
+.row:last-of-type .box {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.row:last-of-type .box:first-of-type:before, 
+.row:nth-of-type(3) .box:first-of-type:before {
+    content: '';
+    position: absolute;
+    top: 1; left: 50%;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #35281C;
+}
+
+.row:last-of-type .box:last-of-type:before, 
+.row:nth-of-type(3) .box:last-of-type:before {
+    content: '';
+    position: absolute;
+    top: 1; right: 50.5%;
+    border-bottom: 10px solid #35281C;
+    border-left: 10px solid transparent;
+}
+
+
+h2 {
+  margin-top: 5px;
+  font-family: 'Squada One', cursive;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #343E6F;
+  width: 100%;
+  font-size: 2.75rem;
+  text-align: center;
+}
+
+h1 {
+  margin-top: -40px;
+  font-family: 'Squada One', cursive;
+  text-transform: uppercase;
+  letter-spacing: -6px;
+  color: #343E6F;
+  width: 100%;
+  font-size: 15rem;
+  text-align: center;
+}
+
+.center {
+  display: flex;
+}
+
+.numbers {
+  font-family: 'Rozha One', serif;
+  color: #7B1E17;
+  font-size: 2rem;
+  position: relative;
+  margin: auto;
+}
+
+sup {
+  position: relative;
+  top: -5px;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+.marks {
+  font-family: 'Kristi', cursive;
+  font-size: 4.5rem;
+  color: rgba(0,0,0,.4);
+  
+}

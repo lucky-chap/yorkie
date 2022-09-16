@@ -1,5 +1,5 @@
 {
-  "name": "nic-ccms-client",
+  "name": "yorkie",
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
@@ -19,6 +19,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "atropos": "^1.0.2",
     "next": "^12.3.0",
     "next-seo": "^5.5.0",
     "react": "^18.2.0",
